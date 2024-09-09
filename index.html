@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Упс. Что то не так</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=SUSE:wght@100..800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <script src="./src/js/button.js"></script>
+    <script src="./src/js/lanyard.js"></script>
+    <script src="./src/js/loading.js"></script>
+    <script src="./src/js/title.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./none-static/difoon.gif" type="image/x-icon">
 </head>
-<style>
-    body {
-        background-color: #222;
-    }
-    
-    .error {
-        margin-left: 860px;
-    }
-
-    h1 {
-        font-family: "Unbounded", sans-serif;
-        color: white;
-        text-align: center;
-    }
-</style>
 <body>
+    <audio id="audio" loop>
+        <source src="./src/music/audio.mp3" type="audio/mpeg"> 
+    </audio>
+
+    <div class="loading">
+        <h1> > click to enter <</h1>
+        <p>Warning: there is music</p>
+    </div>
+
+    <div id="background-container"></div>
+
+    <div class="musicstop">
+        <button id="musicstop">
+            <img src="buttoniconstop" alt="" alt="ToggleIcon">
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="profile-card">
+                <div class="avatar">
+                    <img id="avatar" alt="Avatar">
+                </div>
+                <div class="status">
+                    <div id="nickname"></div>
+                    <div id="status" class="statusdiscord"></div>
+                    <p>@difoon</p>
+                </div>
+                <button id="toggleButton">
+                    <img id="buttonIcon" src="./static/nightbutton.png" alt="Toggle Icon">
+                </button>
+                <div class="github" onclick="window.open('https://github.com/Difooon', '_blank')"></div>
+                <div class="tg" onclick="window.open('https://t.me/difoon_bot', '_blank')"></div>
+                <div class="discord" onclick="window.open('https://discord.gg/FCPR7kRABs ', '_blank')"></div>
+            </div>
+        </div>
+        </div>
+    </div>
     
-    <img src="https://previews.dropbox.com/p/thumb/ACaGJu77Y3-FL3BMoSA9j7Gpcu61zrujqWjjm1dGTyX54NHnMKTJbZ63iQ-xYF5U8D1pSemErGi43a-w3-QAtizXKPVJtJWDLY6RsGee0mnCvig76GSzR55jxxkJ2cl2eTXs4_PI50Bkhm0tkNkwWqOmN_a18IHZ_Xw0wHCux3GLxedCFghcrbb4CVqr1orCkDabRzFA2fIgAfGCaIap7F4cfAtBy71ANTwJa-VkGK7Pl0kTvt9M8YmxPAb0UkHL4fi6mecW_kpAMWVlT0ej6btY9fSCQnXSYDAE3y6ImccW4arxRc3A3SR3NDfc2MWSKYc/p.png" alt="error" class="error">
-
-    <h1>Упс. Сайт временно недоступен. В скором временем починим!</h1>
-
 </body>
 </html>
