@@ -1,0 +1,96 @@
+body {
+    background-color: #222;
+}
+
+.name {
+    font-family: "Unbounded", sans-serif;
+    color: white;
+    margin-left: 50px;
+}
+
+h2 {
+    font-family: "SUSE", sans-serif;
+    color: white;
+}
+
+.description {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #444;
+}
+
+.BIO {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr);
+    transition: 1s;
+    display: block;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .BIO:hover {
+    transition: 1s;
+    box-shadow: 0 0 50px var(--clr);
+  }
+
+.PHOTOS {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr);
+    transition: 1s;
+    display: block;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .PHOTOS:hover {
+    transition: 1s;
+    box-shadow: 0 0 50px var(--clr);
+  }
+
+.PROJECT {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr);
+    transition: 1s;
+    display: block;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .PROJECT:hover {
+    transition: 1s;
+    box-shadow: 0 0 50px var(--clr);
+  }
+
+.Donate {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr);
+    transition: 1s;
+    display: block;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+.Donate:hover {
+    transition: 1s;
+    box-shadow: 0 0 50px var(--clr);
+  }
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px; 
+}
