@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DIFOON | Тут могла быть чья та реклама</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./src/js/wait.js"></script>
+    <script src="./src/js/title.js"></script>
+    <script src="./src/js/audioplayer.js"></script>
+    <script src="./src/js/lanyard.js"></script>
+    <script src="./src/js/animated-text.js"></script>
+    <link rel="shortcut icon" href="./src/image/favicon.png" type="image/x-icon">
+    <!-- Предпросмотр -->
+    <meta property="og:title" content="Посмотри сайт, а то станешь таким же" />
+    <meta property="og:description" content="Ладно, на самом деле ты лучший! $ DIFOON" />
+    <meta property="og:image" content="https://masterpiecer-images.s3.yandex.net/6db476f6759911ee978d363fac71b015:upscaled" />
+    <meta property="og:url" content="https://difoon.fun/" />
+    <meta property="og:type" content="profile" />
+</head>
+<body>
+    <div class="wait">
+        <img src="./src/image/wait.gif" alt="wait">
+    </div>
+
+
+    <div class="name">
+        <h1 id="nameText">DIFOON</h1>
+    </div>
+
+    <div class="avatar">
+        <li class="avatar" id="avatar"><img src="avatar.png" alt="avatar" class="image" style="border-radius: 100%;"></li>
+    </div>
+
+    <div class="nickname-discord">
+        <p>@difoon</p>
+    </div>
+
+    <div class="social-links">
+        <a href="https://t.me/difoonlive" target="_blank">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://devs.difoon.fun/discord.html" target="_blank">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+
+    <div class="audio-player">
+        <audio id="audio" src="./src/difoon.mp3"></audio>
+        <div class="controls">
+            <button id="playPauseBtn" aria-label="Play/Pause">
+                <i class="fa fa-play" id="playIcon"></i>
+                <i class="fa fa-pause" id="pauseIcon" style="display:none;"></i>
+            </button>
+            <div class="time">
+                <span id="currentTime">0:00</span> /
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="animated-text">
+        <div class="js--text-cont1"></div>
+        <div class="js--text-cont2"></div>
+    </div>
+
+ 
+</body>
+<script>
+    function getRandomColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    let colorInterval;
+
+    document.querySelector('.name').addEventListener('mouseenter', function() {
+        const nameText = document.getElementById('nameText');
+        
+        colorInterval = setInterval(() => {
+            nameText.style.color = getRandomColor();
+        }, 400);  
+    });
+
+    document.querySelector('.name').addEventListener('mouseleave', function() {
+        const nameText = document.getElementById('nameText');
+        
+        clearInterval(colorInterval); 
+        nameText.style.color = 'white';
+    });
+
+</script>
+</html>
