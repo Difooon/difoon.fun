@@ -2,7 +2,7 @@
 
 New Open-Source Difoon's website!
 
-Made from sources: https://oneheka.com/, https://oneweeee.ru/, https://cookielast.fun/
+Made from sources: https://exta.dev , https://weshhovsky.fun/
 
 Advantages and qualities of the site:
 - Download protect
