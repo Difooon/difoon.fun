@@ -1,8 +1,8 @@
 # [difoon.fun](https://difoon.fun/)
 
-New Open-Source Difoon's website!
+New Open-Source Difoon's website on React!
 
-Made from sources: https://exta.dev , https://weshhovsky.fun/
+Made from sources: https://exta.dev , https://weshhovsky.fun/, https://ru.react.dev/learn
 
 Advantages and qualities of the site:
 - Download protect
